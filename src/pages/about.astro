@@ -29,4 +29,8 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
     {identity.hobbies.length >= 2 &&
         <li>Two of my hobbies are: {identity.hobbies[Math.floor(Math.random() * identity.hobbies.length)]} and {identity.hobbies[Math.floor(Math.random() * identity.hobbies.length)]}</li>
     }   
+        <p>My skills are:</p>
+    <ul>
+        {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
 </Layout>
